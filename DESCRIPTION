@@ -1,0 +1,40 @@
+Package: IFANN
+Type: Package
+Title: Intuitionistic Fuzzy Artificial Neural Network for Time Series
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Anita", family = "Sarkar", role = "aut"),
+    person(given = "Md", family = "Yeasin", role = c("aut", "cre"),
+           email = "yeasin.iasri@gmail.com"),
+    person(given = "Ranjit Kumar", family = "Paul", role = "aut"),
+    person(given = "Pushkar", family = "Bora", role = "aut"),
+    person(given = "Ankit Kumar", family = "Singh", role = "aut"),
+    person(given = "Amrit Kumar", family = "Paul", role = "aut")
+  )
+Description: Time series forecasting with an intuitionistic fuzzy artificial
+    neural network. Lagged values of the series and their intuitionistic
+    fuzzy membership and non-membership degrees, obtained by intuitionistic
+    fuzzy c-means clustering, are used as inputs of a feed-forward neural
+    network with one hidden layer, averaged over several random starts. The
+    lag order and the network hyper-parameters (number of hidden neurons and
+    weight decay) can be set manually or tuned automatically by grid search
+    over user-defined minimum, maximum and step ranges, with time-ordered
+    validation and a progress display. The intuitionistic fuzzy approach
+    follows Yolcu and Yolcu (2023) <doi:10.1016/j.eswa.2022.119336>.
+License: GPL-3
+Encoding: UTF-8
+Imports: nnet, stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.1
+NeedsCompilation: no
+Packaged: 2026-11-02 10:23:43 UTC; borap
+Author: Anita Sarkar [aut],
+  Md Yeasin [aut, cre],
+  Ranjit Kumar Paul [aut],
+  Pushkar Bora [aut],
+  Ankit Kumar Singh [aut],
+  Amrit Kumar Paul [aut]
+Maintainer: Md Yeasin <yeasin.iasri@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-11-20 12:20:08 UTC
